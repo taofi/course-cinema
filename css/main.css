@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #1A181D;
   padding: 0px;
 }
 body::before {
@@ -17,9 +17,9 @@ body::before {
 .main_contaner {
   position: absolute;
   left: 0;
-  border-color: #20CDB8;
+  border-color: rgb(32, 205, 185);
   background: rgba(0, 0, 0, 0.2);
-  border: 4px solid #20CDB8;
+  border: 4px solid rgb(32, 205, 185);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin: 10px;
@@ -29,41 +29,46 @@ body::before {
 }
 
 nav {
+  height: 70px;
   margin: 0;
   padding: 0;
-  border-color: #20CDB8;
+  border-color: rgb(32, 205, 185);
   background: rgba(0, 0, 0, 0.2);
-  border: 4px solid #20CDB8;
+  border: 4px solid rgb(32, 205, 185);
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
 }
 nav img {
-  margin-left: 15px;
+  margin-left: 5px;
   flex: 0 0 69;
 }
 nav p {
   font-family: "ROBO";
   font-style: normal;
-  font-weight: 400;
   font-size: 40px;
-  line-height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  flex: 1 0 100px;
+  flex: 1 0 200px;
 }
 nav a {
+  margin: -1px;
   font-family: "rubik mono";
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
   text-decoration: none;
-  border: 4px solid #20CDB8;
-  flex: 1 2 100px;
+  white-space: nowrap;
+  border: 4px solid rgb(32, 205, 185);
+  flex: 1 0 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #20CDB8;
+  color: rgb(32, 205, 185);
+  transition: color 0.2s, background-color 0.2s;
+}
+nav a:hover {
+  color: white;
+  background-color: rgba(32, 205, 185, 0.6);
 }/*# sourceMappingURL=main.css.map */
