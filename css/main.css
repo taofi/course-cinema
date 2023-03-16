@@ -33,9 +33,9 @@ nav {
   height: 70px;
   margin: 0;
   padding: 0;
+  border-bottom: 4px solid;
   border-color: rgb(32, 205, 185);
   background: rgba(0, 0, 0, 0.2);
-  border: 4px solid rgb(32, 205, 185);
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
