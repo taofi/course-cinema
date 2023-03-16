@@ -2,21 +2,15 @@
 @import "_mixin.scss";
 
 body{
-    background-color: #1A181D;
-    &::before{
-        content: "";
-        position: absolute;
-        top: 0; left: 0;
-        width: 100vw; height: 100vh;
-        background-image: url(../images/bg_dote.png);
-        filter: opacity(20%);
-        background-size: cover;
-        
-    }
+    background-image: url(../images/bg_dote.png);
+    background-size: cover;
     padding: 0px;
 }
+a{
+    font-family: 'rubik mono';
+    text-decoration: none;
+}
 .main_contaner{
-    overflow: hidden;
     @include neon;
     position: absolute;
     left: 0;
@@ -25,8 +19,7 @@ body{
     border: 4px solid $maincolor;
     border-radius: 10px;
     margin: 10px;
-    height: calc(100vh - 40px);
-    width: calc(100vw - 30px);
+    width: calc(100% - 34px);
     padding: 0;
 }
 nav{
@@ -45,6 +38,7 @@ nav{
         flex: 0 0 69;
     }
     p{
+        margin: -2px;
         font-family: 'ROBO';
         font-style: normal;
         font-size: 40px;
@@ -56,12 +50,8 @@ nav{
     }
     a{
         @include neon;
-        margin: -2px;
-        font-family: 'rubik mono';
-        //Bdeogale 'rubik mono' bulksans Molot
         font-size: 20px;
         line-height: 20px;
-        text-decoration: none;
         white-space: nowrap;
         border: 4px solid $maincolor;
         border-top: none;
@@ -72,8 +62,6 @@ nav{
         justify-content: center;
         color: $maincolor;
         transition: color 0.2s, background-color 0.2s;
-       // overflow: hidden;
-        position: relative;
     }
 }
 
@@ -83,3 +71,30 @@ nav{
         background-color: rgba(32, 205, 185, 0.6);
     }
 }
+
+
+#popular{
+    position: relative;
+    @include neon;
+    border: 4px solid $maincolor;
+    height: 400px;
+    margin: 40px;
+    .slider_pst{
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        height: 100%;
+       // border: 2px solid red;
+        p{
+            border: 2px solid $maincolor;
+        }
+        a{
+            border: 2px solid $maincolor;
+            color: $maincolor;
+        }
+        img{
+        //    border: 2px solid $maincolor;
+        }
+    }
+}
+

@@ -1,21 +1,15 @@
 body {
-  background-color: #1A181D;
+  background-image: url(../images/bg_dote.png);
+  background-size: cover;
   padding: 0px;
 }
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../images/bg_dote.png);
-  filter: opacity(20%);
-  background-size: cover;
+
+a {
+  font-family: "rubik mono";
+  text-decoration: none;
 }
 
 .main_contaner {
-  overflow: hidden;
   box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   position: absolute;
   left: 0;
@@ -24,8 +18,7 @@ body::before {
   border: 4px solid rgb(32, 205, 185);
   border-radius: 10px;
   margin: 10px;
-  height: calc(100vh - 40px);
-  width: calc(100vw - 30px);
+  width: calc(100% - 34px);
   padding: 0;
 }
 
@@ -46,6 +39,7 @@ nav img {
   flex: 0 0 69;
 }
 nav p {
+  margin: -2px;
   font-family: "ROBO";
   font-style: normal;
   font-size: 40px;
@@ -57,11 +51,8 @@ nav p {
 }
 nav a {
   box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-  margin: -2px;
-  font-family: "rubik mono";
   font-size: 20px;
   line-height: 20px;
-  text-decoration: none;
   white-space: nowrap;
   border: 4px solid rgb(32, 205, 185);
   border-top: none;
@@ -72,10 +63,30 @@ nav a {
   justify-content: center;
   color: rgb(32, 205, 185);
   transition: color 0.2s, background-color 0.2s;
-  position: relative;
 }
 
 .navbt:hover {
   color: white;
   background-color: rgba(32, 205, 185, 0.6);
+}
+
+#popular {
+  position: relative;
+  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  border: 4px solid rgb(32, 205, 185);
+  height: 400px;
+  margin: 40px;
+}
+#popular .slider_pst {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  height: 100%;
+}
+#popular .slider_pst p {
+  border: 2px solid rgb(32, 205, 185);
+}
+#popular .slider_pst a {
+  border: 2px solid rgb(32, 205, 185);
+  color: rgb(32, 205, 185);
 }/*# sourceMappingURL=main.css.map */
