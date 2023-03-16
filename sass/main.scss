@@ -16,6 +16,7 @@ body{
     padding: 0px;
 }
 .main_contaner{
+    overflow: hidden;
     @include neon;
     position: absolute;
     left: 0;
@@ -55,7 +56,7 @@ nav{
     }
     a{
         @include neon;
-        margin: -1px;
+        margin: -2px;
         font-family: 'rubik mono';
         //Bdeogale 'rubik mono' bulksans Molot
         font-size: 20px;
