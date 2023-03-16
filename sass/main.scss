@@ -1,4 +1,5 @@
 @import "_vars.scss";
+@import "_mixin.scss";
 
 body{
     background-color: #1A181D;
@@ -15,12 +16,12 @@ body{
     padding: 0px;
 }
 .main_contaner{
+    @include neon;
     position: absolute;
     left: 0;
     border-color: $maincolor;
     background: rgba(0, 0, 0, 0.2);
     border: 4px solid $maincolor;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin: 10px;
     height: calc(100vh - 40px);
@@ -28,6 +29,7 @@ body{
     padding: 0;
 }
 nav{
+    @include neon;
     height: 70px;
     margin: 0;
     padding: 0;
@@ -52,6 +54,7 @@ nav{
         flex: 1 0 200px;
     }
     a{
+        @include neon;
         margin: -1px;
         font-family: 'rubik mono';
         //Bdeogale 'rubik mono' bulksans Molot
@@ -60,15 +63,22 @@ nav{
         text-decoration: none;
         white-space: nowrap;
         border: 4px solid $maincolor;
+        border-top: none;
+        border-bottom: none;
         flex: 1 0 200px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: $maincolor;
         transition: color 0.2s, background-color 0.2s;
-        &:hover{
-            color: white;
-            background-color: rgba(32, 205, 185, 0.6);;
-        }
+       // overflow: hidden;
+        position: relative;
+    }
+}
+
+.navbt{
+    &:hover{
+        color: white;
+        background-color: rgba(32, 205, 185, 0.6);
     }
 }
