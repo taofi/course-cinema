@@ -2,7 +2,7 @@
 @import "_mixin.scss";
 
 body{
-    background-color: #1A181D;
+    background-color: $bgcolor;
     box-sizing: border-box;
     background-image: url(../images/dots.svg);
     background-size: 100vw 120vh;
@@ -26,19 +26,21 @@ a{
     padding: 0;
 }
 nav{
+    box-sizing: border-box;
     @include neon;
     height: 70px;
     margin: 0;
     padding: 0;
+    border: none;
     border-bottom: 4px solid;
     border-color: $maincolor;
     background: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: flex-end;
-    align-items: stretch;
+    align-items: center;
     img{
         margin-left: 5px;
-        flex: 0 0 69;
+        height: 80%;
     }
     p{
         margin: -2px;
@@ -49,18 +51,60 @@ nav{
         align-items: center;
         justify-content: center;
         color: white;
-        flex: 1 0 200px;
+        flex: 2 0 250px;
     }
+
+    @media (max-width: 460px) {
+        height: 50px;
+        p{
+            font-size: 24px;
+        }
+    }
+}
+
+.burgerI{
+    z-index: 0;
+    position: absolute;
+    height: 50px;
+    display: none;
+    cursor: pointer;
+    right: 20px;
+    transition: 0.3s;
+    @media (max-width: 999px) {
+        display: block;
+        position: realtive;
+    }
+    @media (max-width: 460px) {
+        height: 35px;
+        right: 5px;
+    }
+}
+#Bclose{
+    right: 0;
+    position: relative
+}
+
+#burger_container{
+    @include neon;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    flex: 3 1 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: left 0.8s;
     a{
+        box-sizing: border-box;
+        z-index: 2;
         @include neon;
         font-size: 20px;
         line-height: 20px;
         white-space: nowrap;
-        border: 4px solid $maincolor;
-        border-top: none;
-        border-bottom: none;
-        flex: 1 0 200px;
-        display: flex;
+        border-left:4px  $maincolor solid;
+        flex: 1 0 30%;
+        display: grid;
         align-items: center;
         justify-content: center;
         color: $maincolor;
@@ -70,7 +114,38 @@ nav{
             background-color: rgba(32, 205, 185, 0.6);
         }
     }
+    @media (max-width: 999px) {
+        border-radius: 5px;
+        border: 3px solid $maincolor;
+        margin: 0;
+        padding: 8px;
+        position: fixed;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 10%);
+        justify-items: end;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: $bgcolor;
+        opacity: 0.95;
+        z-index: 4;
+        left: -120vh; 
+        a{
+            position: relative;
+            margin: 5px;
+            width: calc(100% - 25px);
+            border: 3px solid $maincolor;
+            border-radius: 5px;
+        }
+    }
+    @media (max-width: 460px) {
+        width: 100vw;
+    }
 }
+
+
+
 
 
 #popular{
@@ -78,8 +153,8 @@ nav{
     position: relative;
     box-shadow: 0px 0px 8px $maincolor;
     border: 4px solid $maincolor;
-    height: 700px;
-    margin: 40px;
+    height: 650px;
+    margin: 30px;
     .slider_pst{
         position: relative;
         overflow: hidden;
@@ -166,8 +241,9 @@ nav{
             position: absolute;
             background-position: -100px;
         }
-    } @media(min-width: 461px) and (max-width: 719px) {
-        height: 400px;
+    } 
+    @media(min-width: 461px) and (max-width: 720px) {
+        height: 380px;
         .slider_pst{
             p{
                 font-size: 18px;
@@ -188,7 +264,7 @@ nav{
         }
     }
     @media(min-width: 720px) and (max-width: 980px) {
-        height: 500px;
+        height: 420px;
         .slider_pst{
             grid-template-columns: 60% 40%;
             background-image: radial-gradient(50% 50% at 70% 50%, #FFFFFF 0%, #F5F5F5 54.2%, #000000 100%)
@@ -201,13 +277,14 @@ nav{
         }
     }
     @media (min-width:981px) and (max-width: 1439px) {
-        height: 600px;
+        height: 500px;
         .data_img{
             background-position: -100px;
         }
     }
    
     @media (min-width: 2600px) {
+        height: 600px;
         .data_img{
             background-position: 0 -200px;
         }

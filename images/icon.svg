@@ -5,22 +5,18 @@
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;stroke:#000000;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}<!--внешиний круг-->
 	.st3{fill:#FFFFFF;}
 	.st4{font-family:'ROBO';}
 	.st5{font-size:12.0065px;}
-	.st6{fill:none;stroke:#FAFCFC;stroke-width:0.75;}
-	.st7{fill:#FAFCFC;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
-	.st8{fill:none;stroke:url(#SVGID_1_);stroke-width:0.75;stroke-miterlimit:10;}
-	.st9{fill:none;stroke:url(#SVGID_2_);stroke-width:0.75;stroke-miterlimit:10;}
-	.st10{fill:none;stroke:url(#SVGID_3_);stroke-width:0.75;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#FAFCFC;stroke-width:2;}<!--нижние полосы-->
+	.st7{fill:#FAFCFC;stroke:#FFFFFF;stroke-width:1;stroke-miterlimit:10;} <!--круг по центру-->
+	.st10{fill:none;stroke:url(#SVGID_3_);stroke-width:2;stroke-miterlimit:10;} <!--дуга над центральным кругом-->
 	.st11{font-family:'Molot';}
 	.st12{font-size:2.687px;}
 	.st13{fill:none;}
+	
 </style>
-<g id="Слой_2" class="st0">
-	<rect x="-0.5" y="-10.5" class="st1" width="101" height="112"/>
-</g>
 <g id="Слой_1">
 	<line class="st2" x1="30.7" y1="59.3" x2="0.8" y2="59.3"/>
 	<line class="st2" x1="28" y1="58.2" x2="70.7" y2="58.2"/>
@@ -68,8 +64,6 @@
 	<path class="st10" d="M11.2,39.3C16.3,22.8,31.7,10.7,50,10.7c18.2,0,33.6,11.9,38.8,28.4"/>
 	<text transform="matrix(1.313 0 0 1 41.6875 65.9453)" class="st3 st11 st12">BSTU 2023</text>
 	<path id="SVGID_x5F_4_x5F_" class="st13" d="M11.2,38.3C16.3,21.8,31.7,9.7,50,9.7c18.2,0,33.6,11.9,38.8,28.4"/>
-	<text>	<textPath  xlink:href="#SVGID_x5F_4_x5F_" startOffset="12.2349%">
-<tspan  class="st11" style="fill:#F9F9F9; font-size:4px;">BELARUSIAN Cinemas Circuit</tspan>	</textPath>
-</text>
+	
 </g>
 </svg>
