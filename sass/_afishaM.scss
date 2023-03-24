@@ -1,8 +1,75 @@
-#afishaCont{
-    background-color: #000000;
-    position: relative;
-    box-shadow: 0px 0px 8px $maincolor;
-    border: 4px solid $maincolor;
-    height: 300px;
+#afisha{
+    height: 350px;
     margin: 30px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    .arrA{
+        background-color: rgba(0, 0, 0, 0.637);
+        box-sizing: border-box;
+        position: absolute;
+        width: 40px;
+        height: 60px;
+        @include neon;
+        border: 3px solid $maincolor;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        cursor: pointer;
+        img{
+            height: 100%;
+        }
+        z-index: 3;
+    }
+    #arrLA{
+        left: 10px;
+    }
+    #arrRA{
+        right: 10px;
+        transform: rotate(180deg);
+    }
+}
+
+
+#afishaContent{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    @include neon;
+    //box-shadow: 0px 0px 8px $maincolor;
+    border: 4px solid $maincolor;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 20px;
+    #conveyorAfish{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        transform: translatex(0px);
+        transition: transform 0.8s;
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        .poster{
+            @include neon;
+            //box-sizing: border-box;
+            flex: 0 0 200px;
+            overflow: hidden;
+            box-shadow: 0px 0px 8px $maincolor;
+            border: 4px solid $maincolor;
+            margin: 20px;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    
+   // padding: 2%;
+    
 }
