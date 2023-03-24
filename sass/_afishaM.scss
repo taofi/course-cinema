@@ -22,6 +22,10 @@
             height: 100%;
         }
         z-index: 3;
+        transition: 0.5s;
+        &:hover{
+            background-color: rgba(4, 41, 46, 0.637);
+        }
     }
     #arrLA{
         left: 10px;
@@ -70,36 +74,42 @@
             }
             .infoP{
                 box-sizing: border-box;
-                padding-bottom: 15px;
-                opacity: 1;
+                padding: 15px;
+                opacity: 0;
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                background-color: #20cdb976;
+                background-color: #20cdb9a2;
                 transition: 0.5s;
                 display: grid;
                 align-items: end;
-                justify-content: center;
-                grid-template-rows: 1fr 1fr 1fr;
-                .janr{
-                    //border: 1px solid white;
-                    padding: 10px;
-                    color: rgb(131, 131, 131);
-                    text-align: left;
-                    text-shadow: 0 0 4px black;
-                }
-                .name{
-                    padding-left: 10px;
-                   // border: 1px solid white;
-                    width: 100%;
-                    color: white;
-                    display: block;
-                    font-size: 1.5em;
-                    text-align: left;
+                grid-template-rows: 190px 70px;
+                font-size: 15px;
+                font-family: 'molot';
+                p{
+                    padding: 5px;
+                    text-align: begin;
+                    margin: 0;
+                    .janr{
+                        //border: 1px solid white;
+                        color: rgb(105, 104, 104);
+                        display: block;
+                        text-shadow: 0 0 4px rgb(180, 180, 180);
+                        margin-bottom: 5px;
+                    }
+                    .name{
+                       // border: 1px solid white;
+                        width: 100%;
+                        color: white;
+                        display: block;
+                        font-size: 1.5em;
+                        text-align: left;
+                        text-shadow: 0 0 4px rgb(0, 0, 0);
+                    }
                 }
                 a{
                     @include neon;
-                    margin-top: 20px;
+                    font-size: 15px;
                     height: 35px;
                     width: 90%;
                     padding: 5px;
@@ -114,7 +124,8 @@
                     background-color: rgba(0, 0, 0, 0.422);
                     &:hover{
                         color: white;
-                        background-color: rgba(32, 205, 185, 0.678);
+                        background-color: rgba(32, 205, 185, 0.808);
+                        border-color: rgb(175, 231, 225);
                     }
                 }
             }
