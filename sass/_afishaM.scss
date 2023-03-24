@@ -58,7 +58,8 @@
         align-items: stretch;
         .poster{
             @include neon;
-            //box-sizing: border-box;
+            position: relative;
+            box-sizing: border-box;
             flex: 0 0 200px;
             overflow: hidden;
             box-shadow: 0px 0px 8px $maincolor;
@@ -66,6 +67,61 @@
             margin: 20px;
             img{
                 height: 100%;
+            }
+            .infoP{
+                box-sizing: border-box;
+                padding-bottom: 15px;
+                opacity: 1;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #20cdb976;
+                transition: 0.5s;
+                display: grid;
+                align-items: end;
+                justify-content: center;
+                grid-template-rows: 1fr 1fr 1fr;
+                .janr{
+                    //border: 1px solid white;
+                    padding: 10px;
+                    color: rgb(131, 131, 131);
+                    text-align: left;
+                    text-shadow: 0 0 4px black;
+                }
+                .name{
+                    padding-left: 10px;
+                   // border: 1px solid white;
+                    width: 100%;
+                    color: white;
+                    display: block;
+                    font-size: 1.5em;
+                    text-align: left;
+                }
+                a{
+                    @include neon;
+                    margin-top: 20px;
+                    height: 35px;
+                    width: 90%;
+                    padding: 5px;
+                    border: 2px solid $maincolor;
+                    border-radius: 10px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $maincolor;
+                    transition: color 0.2s, background-color 0.2s;
+                    background-color: rgba(0, 0, 0, 0.422);
+                    &:hover{
+                        color: white;
+                        background-color: rgba(32, 205, 185, 0.678);
+                    }
+                }
+            }
+            &:hover{
+                .infoP{
+                    opacity: 1;
+                }
             }
         }
     }

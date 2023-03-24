@@ -3,6 +3,7 @@
 @import "_popular.scss";
 @import "_navM.scss";
 @import "_afishaM.scss";
+@import "_info.scss";
 html, body{
     background-color: $bgcolor;
     box-sizing: border-box;
@@ -12,6 +13,15 @@ html, body{
     margin: 0;
     height: 100%;
     width: 100%;
+    @media (max-width: 768px) {
+        background-size: 140%;
+    }
+    @media (max-width: 500px) {
+        background-size: 160%;
+    }
+    @media (max-width: 370px) {
+        background-size: 200%;
+    }
 }
 
 a{
