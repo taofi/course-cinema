@@ -1,13 +1,18 @@
 @import "_vars.scss";
 @import "_mixin.scss";
-
-body{
+@import "_popular.scss";
+@import "_navM.scss";
+@import "_afishaM.scss";
+html, body{
     background-color: $bgcolor;
     box-sizing: border-box;
     background-image: url(../images/dots.svg);
-    background-size: 100vw 120vh;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
-
 
 a{
     font-family: 'rubik mono';
@@ -17,7 +22,6 @@ a{
     @include neon;
     position: absolute;
     left: 0;
-    border-color: $maincolor;
     background: rgba(0, 0, 0, 0.2);
     border: 4px solid $maincolor;
     border-radius: 10px;
@@ -25,269 +29,10 @@ a{
     width: calc(100% - 34px);
     padding: 0;
 }
-nav{
-    box-sizing: border-box;
-    @include neon;
-    height: 70px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    border-bottom: 4px solid;
-    border-color: $maincolor;
-    background: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    img{
-        margin-left: 5px;
-        height: 80%;
-    }
-    p{
-        margin: -2px;
-        font-family: 'ROBO';
-        font-style: normal;
-        font-size: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        flex: 2 0 250px;
-    }
-
-    @media (max-width: 460px) {
-        height: 50px;
-        p{
-            font-size: 24px;
-        }
-    }
-}
-
-.burgerI{
-    z-index: 0;
-    position: absolute;
-    height: 50px;
-    display: none;
-    cursor: pointer;
-    right: 20px;
-    transition: 0.3s;
-    @media (max-width: 999px) {
-        display: block;
-        position: realtive;
-    }
-    @media (max-width: 460px) {
-        height: 35px;
-        right: 5px;
-    }
-}
-#Bclose{
-    right: 0;
-    position: relative
-}
-
-#burger_container{
-    @include neon;
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    height: 100%;
-    flex: 3 1 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    transition: left 0.8s;
-    a{
-        box-sizing: border-box;
-        z-index: 2;
-        @include neon;
-        font-size: 20px;
-        line-height: 20px;
-        white-space: nowrap;
-        border-left:4px  $maincolor solid;
-        flex: 1 0 30%;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        color: $maincolor;
-        transition: color 0.2s, background-color 0.2s;
-        &:hover{
-            color: white;
-            background-color: rgba(32, 205, 185, 0.6);
-        }
-    }
-    @media (max-width: 999px) {
-        border-radius: 5px;
-        border: 3px solid $maincolor;
-        margin: 0;
-        padding: 8px;
-        position: fixed;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 10%);
-        justify-items: end;
-        top: 0;
-        left: 0;
-        width: 50vw;
-        height: 100vh;
-        background-color: $bgcolor;
-        opacity: 0.95;
-        z-index: 4;
-        left: -120vh; 
-        a{
-            position: relative;
-            margin: 5px;
-            width: calc(100% - 25px);
-            border: 3px solid $maincolor;
-            border-radius: 5px;
-        }
-    }
-    @media (max-width: 460px) {
-        width: 100vw;
-    }
-}
 
 
 
 
 
-#popular{
-    background-color: #000000;
-    position: relative;
-    box-shadow: 0px 0px 8px $maincolor;
-    border: 4px solid $maincolor;
-    height: 650px;
-    margin: 30px;
-    .slider_pst{
-        position: relative;
-        overflow: hidden;
-        display: grid;
-        height: 100%;
-        grid-template-columns: 50% 50%;
-        justify-items: center;
-        align-items: end;
-        background-repeat: none;
-        transition: background-image 0.2s;
-        background-image: linear-gradient(86deg, #000000 46%, rgba(0, 0, 0, 0) 50%, #FFFFFF 57%, #FFFFFF 96%, rgba(0, 0, 0, 0.25) 98%, #000000 100%);
-        p{
-            padding-left: 20px;
-            z-index: 1;
-            font-family: 'molot';
-            margin: 30px;
-            //border: 2px solid $maincolor;
-            font-size: 25px;
-            width: 100%;
-            .janr{
-                display: block;
-                width: 100%;
-                //border: 1px solid white;
-                padding: 10px;
-                color: rgb(131, 131, 131);
-                text-align: left;
-                text-shadow: 0 0 4px black;
-            }
-            .name{
-                padding-left: 10px;
-               // border: 1px solid white;
-                width: 100%;
-                color: white;
-                display: block;
-                font-size: 1.5em;
-                text-align: left;
-            }
-            a{
-                @include neon;
-                margin-top: 20px;
-                height: 35px;
-                width: 300px;
-                padding: 5px;
-                border: 2px solid $maincolor;
-                border-radius: 10px;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: $maincolor;
-                transition: color 0.2s, background-color 0.2s;
-                &:hover{
-                    color: white;
-                    background-color: rgba(32, 205, 185, 0.6);
-                }
-            }
-        }
-        .data_img{
-            background-image: url(../images/drive.jpeg);
-            background-size: cover;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            mix-blend-mode: darken;
-            //order: 2px solid white;
-        }
-    }
-    @media(min-width: 320px) and (max-width: 460px) {
-        height: 310px;
-        .slider_pst{
-            grid-template-columns: 100%;
-            background-image: radial-gradient(80% 50% at 70% 50%, #FFFFFF 0%, #F5F5F5 54.2%, #000000 100%);
-            p{
-                font-size: 18px;
-                .janr{color: #b3b3b3;}
-                a{
-                    width: 150px;
-                }
-            }
-        }
-        .data_img{
-            left: 0;
-            border-top: 0;
-            position: absolute;
-            background-position: -100px;
-        }
-    } 
-    @media(min-width: 461px) and (max-width: 720px) {
-        height: 380px;
-        .slider_pst{
-            p{
-                font-size: 18px;
-                .janr{color: #b3b3b3;}
-                a{
-                    width: 150px;
-                }
-            }
-            grid-template-columns:100%;
-            background-image: radial-gradient(80% 50% at 70% 50%, #FFFFFF 0%, #F5F5F5 54.2%, #000000 100%)
-        }
-       
-        .data_img{
-            left: 0;
-            border-top: 0;
-            position: absolute;
-            background-position: 0px;
-        }
-    }
-    @media(min-width: 720px) and (max-width: 980px) {
-        height: 420px;
-        .slider_pst{
-            grid-template-columns: 60% 40%;
-            background-image: radial-gradient(50% 50% at 70% 50%, #FFFFFF 0%, #F5F5F5 54.2%, #000000 100%)
-        }
-        .data_img{
-            left: 0;
-            border-top: 0;
-            position: absolute;
-            background-position: 150px;
-        }
-    }
-    @media (min-width:981px) and (max-width: 1439px) {
-        height: 500px;
-        .data_img{
-            background-position: -100px;
-        }
-    }
-   
-    @media (min-width: 2600px) {
-        height: 600px;
-        .data_img{
-            background-position: 0 -200px;
-        }
-    }
-}
+
 
