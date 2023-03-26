@@ -34,6 +34,9 @@
         right: 10px;
         transform: rotate(180deg);
     }
+    @media (max-width: 375px) {
+        height: 300px;
+    }
 }
 
 
@@ -61,6 +64,7 @@
         flex-wrap: nowrap;
         align-items: stretch;
         .poster{
+
             @include neon;
             position: relative;
             box-sizing: border-box;
@@ -128,15 +132,26 @@
                         border-color: rgb(175, 231, 225);
                     }
                 }
+                @media (max-width: 375px) {
+                    grid-template-rows: 160px 60px;
+                    font-size: 12px;
+                    padding: 11px;
+                }
             }
             &:hover{
                 .infoP{
                     opacity: 1;
                 }
             }
+            @media (max-width: 375px) {
+                flex: 0 0 160px;
+            }
         }
+        
     }
-    
+    @media (max-width: 375px) {
+        padding-left: 0px;
+    }
    // padding: 2%;
     
 }

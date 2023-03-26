@@ -1,47 +1,8 @@
 @import "_vars.scss";
 @import "_mixin.scss";
 @import "_popular.scss";
-@import "_navM.scss";
 @import "_afishaM.scss";
 @import "_info.scss";
-html, body{
-    background-color: $bgcolor;
-    box-sizing: border-box;
-    background-image: url(../images/dots.svg);
-    background-size: 100%;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    @media (max-width: 768px) {
-        background-size: 140%;
-    }
-    @media (max-width: 500px) {
-        background-size: 160%;
-    }
-    @media (max-width: 370px) {
-        background-size: 200%;
-    }
-}
-
-a{
-    font-family: 'rubik mono';
-    text-decoration: none;
-}
-.main_contaner{
-    @include neon;
-    position: absolute;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-    border: 4px solid $maincolor;
-    border-radius: 10px;
-    margin: 10px;
-    width: calc(100% - 34px);
-    padding: 0;
-}
-
-
-
 
 
 

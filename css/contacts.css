@@ -1,0 +1,33 @@
+.main_contaner {
+  height: calc(100% - 30px);
+}
+
+section {
+  margin: 70px;
+  height: calc(100% - 140px);
+  display: grid;
+  grid-template-rows: repeat(4, 50px) calc(100% - 200px);
+  margin-top: 10px;
+}
+section h3, section p {
+  color: white;
+  font-family: "Bdeogale";
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  section h3, section p {
+    font-size: 20px;
+  }
+}
+section #mapCin {
+  margin-top: 20px;
+  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  overflow: hidden;
+  border: 5px solid rgb(32, 205, 185);
+}
+@media (max-width: 768px) {
+  section {
+    margin: 20px;
+    grid-template-rows: repeat(4, 40px) calc(100% - 160px);
+  }
+}/*# sourceMappingURL=contacts.css.map */

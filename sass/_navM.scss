@@ -18,20 +18,44 @@ nav{
     }
     p{
         margin: -2px;
-        font-family: 'ROBO';
-        font-style: normal;
-        font-size: 40px;
-        display: flex;
-        align-items: center;
         justify-content: center;
-        color: white;
+        text-align: center;
+        a{
+            font-family: 'ROBO';
+            font-style: normal;
+            font-size: 40px;
+            color: white;
+           
+        }
         flex: 2 0 250px;
     }
 
     @media (max-width: 460px) {
         height: 50px;
+        img{
+            margin-top: 5px;
+            height: 40px;
+           // background-color: blue;
+        }
         p{
-            font-size: 24px;
+           // background-color: red;
+           flex: 2 0 200px;
+           a{
+            font-size: 30px;
+           }
+        }
+    }
+    @media (max-width: 375px) {
+        height: 40px;
+        img{
+            margin-top: 5px;
+            height: 35px;
+        }
+        p{
+            flex: 2 0 150px;
+            a{
+                font-size: 24px;
+            }
         }
     }
 }
@@ -46,7 +70,7 @@ nav{
     transition: 0.3s;
     @media (max-width: 999px) {
         display: block;
-        position: realtive;
+        position: relative;
     }
     @media (max-width: 460px) {
         height: 35px;
@@ -55,7 +79,7 @@ nav{
 }
 #Bclose{
     right: 0;
-    position: relative
+    position: relative;
 }
 
 #burger_container{
