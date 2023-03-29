@@ -5,20 +5,65 @@
     border: 4px solid $maincolor;
     height: 650px;
     margin: 30px;
+    padding:0;
+    display: flex;
+    align-items: center;
+    
+    .arrA{
+        background-color: rgba(0, 0, 0, 0.637);
+        box-sizing: border-box;
+        position: absolute;
+        width: 40px;
+        height: 60px;
+        @include neon;
+        border: 3px solid $maincolor;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        cursor: pointer;
+        img{
+            height: 100%;
+        }
+        z-index: 3;
+        transition: background-color 0.5s;
+        &:hover{
+            background-color: rgba(4, 41, 46, 0.637);
+        }
+    }
+    #arrPR{
+        right: -25px;
+        transform: rotate(180deg);
+    }
+    #arrPL{
+        left: -25px;
+    }
+    #popularCont{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
     .slider_pst{
-        position: relative;
+        margin: 0;
+        position: absolute;
         overflow: hidden;
         display: grid;
         height: 100%;
-        grid-template-columns: 50% 50%;
+        width: 100%;
+        grid-template-columns: 40% 60%;
         justify-items: center;
         align-items: end;
         background-repeat: none;
-        transition: background-image 0.2s;
-        background-image: linear-gradient(86deg, #000000 46%, rgba(0, 0, 0, 0) 50%, #FFFFFF 57%, #FFFFFF 96%, rgba(0, 0, 0, 0.25) 98%, #000000 100%);
+        transition: background-image  0.2s, opacity 1s;
+        
         p{
+            position: relative;
+           // background-color: blue;
             padding-left: 20px;
-            z-index: 1;
+            z-index: 4;
             font-family: 'molot';
             margin: 30px;
             //border: 2px solid $maincolor;
@@ -62,13 +107,31 @@
                 }
             }
         }
+        .shadowsImg{
+            transition: 0.3s;
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 43%, rgba(84,6,17,0) 46%, rgba(121,9,9,0) 93%, rgba(0,0,0,1) 97%, rgba(0,0,0,1) 100%);
+        }
         .data_img{
-            background-image: url(../images/drive.jpeg);
-            background-size: cover;
+            overflow: hidden;
+            img{
+                position: relative;
+                height: 100%;
+                width: auto;
+                @media (min-width: 2400px) {
+                    width: 100%;
+                    height: auto;   
+                    top: -50px;
+                }
+            }
             z-index: 0;
             width: 100%;
             height: 100%;
-            mix-blend-mode: darken;
+          //  mix-blend-mode: darken;
+            //background-position: 0px;
             //order: 2px solid white;
         }
     }
@@ -128,15 +191,9 @@
     }
     @media (min-width:981px) and (max-width: 1439px) {
         height: 500px;
-        .data_img{
-            background-position: -100px;
-        }
     }
    
     @media (min-width: 2600px) {
-        height: 600px;
-        .data_img{
-            background-position: 0 -200px;
-        }
+        height: 700px;
     }
 }
