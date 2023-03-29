@@ -1,0 +1,2 @@
+
+location.hash = "my-data"; 

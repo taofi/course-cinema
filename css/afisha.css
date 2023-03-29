@@ -1,0 +1,104 @@
+.head {
+  margin-left: 30px;
+}
+.head h2 {
+  color: rgb(32, 205, 185);
+}
+
+main {
+  margin: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  border: 5px solid rgb(32, 205, 185);
+}
+main #afishaBlock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+main #afishaBlock .poster {
+  margin: 20px;
+  position: relative;
+  aspect-ratio: 2/3;
+  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px rgb(32, 205, 185);
+  border: 4px solid rgb(32, 205, 185);
+  flex: 0 0 250px;
+  width: 250px;
+}
+main #afishaBlock .poster img {
+  height: 100%;
+}
+main #afishaBlock .poster .infoP {
+  box-sizing: border-box;
+  padding: 15px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 205, 185, 0.6352941176);
+  transition: 0.5s;
+  display: grid;
+  align-items: end;
+  grid-template-rows: 190px 70px;
+  font-size: 15px;
+  font-family: "molot";
+}
+main #afishaBlock .poster .infoP p {
+  padding: 5px;
+  text-align: begin;
+  margin: 0;
+}
+main #afishaBlock .poster .infoP p .janr {
+  color: rgb(105, 104, 104);
+  display: block;
+  text-shadow: 0 0 4px rgb(180, 180, 180);
+  margin-bottom: 5px;
+}
+main #afishaBlock .poster .infoP p .name {
+  width: 100%;
+  color: white;
+  display: block;
+  font-size: 1.5em;
+  text-align: left;
+  text-shadow: 0 0 4px rgb(0, 0, 0);
+}
+main #afishaBlock .poster .infoP a {
+  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  font-size: 15px;
+  height: 35px;
+  width: 90%;
+  padding: 5px;
+  border: 2px solid rgb(32, 205, 185);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(32, 205, 185);
+  transition: color 0.2s, background-color 0.2s;
+  background-color: rgba(0, 0, 0, 0.422);
+}
+main #afishaBlock .poster .infoP a:hover {
+  color: white;
+  background-color: rgba(32, 205, 185, 0.808);
+  border-color: rgb(175, 231, 225);
+}
+@media (max-width: 375px) {
+  main #afishaBlock .poster .infoP {
+    grid-template-rows: 160px 60px;
+    font-size: 12px;
+    padding: 11px;
+  }
+}
+main #afishaBlock .poster:hover .infoP {
+  opacity: 1;
+}
+@media (max-width: 375px) {
+  main #afishaBlock .poster {
+    flex: 0 0 160px;
+  }
+}/*# sourceMappingURL=afisha.css.map */

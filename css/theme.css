@@ -151,29 +151,16 @@ nav p a {
 }
 
 html, body {
+  position: relative;
   background-color: #1A181D;
   box-sizing: border-box;
   background-image: url(../images/dots.svg);
   background-size: 100%;
+  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
-}
-@media (max-width: 768px) {
-  html, body {
-    background-size: 140%;
-  }
-}
-@media (max-width: 500px) {
-  html, body {
-    background-size: 160%;
-  }
-}
-@media (max-width: 370px) {
-  html, body {
-    background-size: 200%;
-  }
 }
 
 a {

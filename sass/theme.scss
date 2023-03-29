@@ -2,23 +2,20 @@
 @import "_mixin.scss";
 @import "_navM.scss";
 html, body{
+    position: relative;
     background-color: $bgcolor;
     box-sizing: border-box;
     background-image: url(../images/dots.svg);
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
     background-size: 100%;
+    background-repeat: no-repeat;
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
-    @media (max-width: 768px) {
-        background-size: 140%;
-    }
-    @media (max-width: 500px) {
-        background-size: 160%;
-    }
-    @media (max-width: 370px) {
-        background-size: 200%;
-    }
+   
 }
 
 a{
