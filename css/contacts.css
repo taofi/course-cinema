@@ -14,6 +14,9 @@ section h3, section p {
   font-family: "Bdeogale";
   font-size: 30px;
 }
+section h3 span, section p span {
+  font-size: 0.8em;
+}
 @media (max-width: 768px) {
   section h3, section p {
     font-size: 20px;

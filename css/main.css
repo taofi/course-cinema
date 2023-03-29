@@ -8,6 +8,32 @@
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#popular #dotsContainer {
+  margin-top: 10px;
+  z-index: 5;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 100%;
+}
+#popular #dotsContainer .dots {
+  cursor: pointer;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 0;
+  box-shadow: none;
+  border: 0px solid white;
+  display: inline-block;
+  background-color: rgb(32, 205, 185);
+  position: relative;
+  margin: 8px;
+  width: 12px;
+  height: 12px;
+  transition: 1s border;
 }
 #popular .arrA {
   background-color: rgba(0, 0, 0, 0.637);
@@ -40,6 +66,7 @@
   left: -25px;
 }
 #popular #popularCont {
+  flex: 0 0 100%;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -109,7 +136,7 @@
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: linear-gradient(86deg, rgb(2, 0, 36) 0%, rgb(0, 0, 0) 43%, rgba(84, 6, 17, 0) 46%, rgba(121, 9, 9, 0) 93%, rgb(0, 0, 0) 97%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(86deg, rgb(1, 2, 20) 0%, rgb(0, 0, 0) 43%, rgba(84, 6, 17, 0) 46%, rgba(121, 9, 9, 0) 93%, rgb(0, 0, 0) 97%, rgb(0, 3, 29) 100%);
 }
 #popular .slider_pst .data_img {
   overflow: hidden;
@@ -121,30 +148,52 @@
   position: relative;
   height: 100%;
   width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-@media (min-width: 2400px) {
+@media (min-width: 1670px) {
   #popular .slider_pst .data_img img {
     width: 100%;
     height: auto;
-    top: -50px;
+    top: -20px;
   }
 }
-@media (min-width: 320px) and (max-width: 460px) {
+@media (min-width: 1970px) {
+  #popular .slider_pst .data_img img {
+    top: -10%;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  #popular .slider_pst .data_img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  #popular .slider_pst .data_img img {
+    left: -75px;
+  }
+}
+@media (max-width: 460px) {
   #popular {
     height: 310px;
   }
   #popular .slider_pst {
-    grid-template-columns: 100%;
-    background-image: radial-gradient(80% 50% at 70% 50%, #FFFFFF 0%, #F5F5F5 54.2%, #000000 100%);
+    grid-template-columns: 85%;
+    background-image: radial-gradient(80% 50% at 70% 50%, #FFFFFF 0%, #F5F5F5 54.2%, #01000a 100%);
   }
   #popular .slider_pst p {
-    font-size: 18px;
+    font-size: 15px;
   }
   #popular .slider_pst p .janr {
     color: #b3b3b3;
   }
   #popular .slider_pst p a {
     width: 150px;
+  }
+  #popular .slider_pst .shadowsImg {
+    background: radial-gradient(80% 50% at 70% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1921568627) 54.2%, #000313 100%);
   }
   #popular .data_img {
     left: 0;
@@ -159,7 +208,6 @@
   }
   #popular .slider_pst {
     grid-template-columns: 100%;
-    background-image: radial-gradient(80% 50% at 70% 50%, #FFFFFF 0%, #F5F5F5 54.2%, #000000 100%);
   }
   #popular .slider_pst p {
     font-size: 18px;
@@ -169,6 +217,9 @@
   }
   #popular .slider_pst p a {
     width: 150px;
+  }
+  #popular .slider_pst .shadowsImg {
+    background: radial-gradient(80% 50% at 70% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1921568627) 54.2%, #000313 100%);
   }
   #popular .data_img {
     left: 0;
@@ -183,18 +234,30 @@
   }
   #popular .slider_pst {
     grid-template-columns: 60% 40%;
-    background-image: radial-gradient(50% 50% at 70% 50%, #FFFFFF 0%, #F5F5F5 54.2%, #000000 100%);
   }
-  #popular .data_img {
-    left: 0;
-    border-top: 0;
+  #popular .slider_pst .shadowsImg {
+    background: radial-gradient(50% 50% at 70% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1921568627) 54.2%, #000000 100%);
+  }
+  #popular .slider_pst .data_img {
+    display: flex;
     position: absolute;
-    background-position: 150px;
+    justify-content: center;
   }
 }
 @media (min-width: 981px) and (max-width: 1439px) {
   #popular {
     height: 500px;
+  }
+  #popular .slider_pst .shadowsImg {
+    background: linear-gradient(86deg, rgb(1, 2, 20) 0%, rgb(0, 0, 0) 52%, rgba(84, 6, 17, 0) 56%, rgba(121, 9, 9, 0) 90%, rgb(0, 0, 0) 95%, rgb(0, 3, 29) 100%);
+  }
+  #popular .slider_pst img {
+    left: 100px;
+  }
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+  #popular .slider_pst img {
+    left: -20px;
   }
 }
 @media (min-width: 2600px) {
@@ -206,7 +269,7 @@
 #afisha {
   height: 350px;
   margin: 30px;
-  margin: 30px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
 }

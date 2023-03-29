@@ -15,6 +15,9 @@ section{
         color: white; 
         font-family: 'Bdeogale';
         font-size: 30px;
+        span{
+            font-size: 0.8em;
+        }
         @media (max-width: 768px) {
             font-size: 20px;
         }
