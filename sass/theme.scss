@@ -1,21 +1,52 @@
 @import "_vars.scss";
 @import "_mixin.scss";
 @import "_navM.scss";
-html, body{
+html, body {
+    min-height: 100vh;
+    height: 100%;
+}
+body{
     position: relative;
     background-color: $bgcolor;
-    box-sizing: border-box;
-    background-image: url(../images/dots.svg);
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/dotsup.svg);
     -moz-background-size: 100%; 
     -webkit-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
+    width: 100%;
+}
+
+#wrap{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+   // background-color: red;
+    width: 100%;
+    height: auto;
+    min-height: 98vh;
+}
+
+#dotsdown{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -10px;
     padding: 0;
     margin: 0;
-    height: 100%;
-    width: 100%;
-   
+    transition: 0.2s;
+    img{
+        margin-bottom: -10px;
+        width: 100%;
+    }
+    @media (min-width: 1900px) {
+        opacity: 0;
+    }
 }
 
 a{
@@ -23,10 +54,12 @@ a{
     text-decoration: none;
 }
 .main_contaner{
+    z-index: 1;
     @include neon;
-    position: absolute;
+    position: relative;
     left: 0;
-    background: rgba(0, 0, 0, 0.2);
+    min-height: 96vh;
+   // background: rgba(0, 0, 0, 0.2);
     border: 4px solid $maincolor;
     border-radius: 10px;
     margin: 10px;
