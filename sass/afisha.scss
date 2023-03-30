@@ -2,14 +2,57 @@
 @import "_mixin.scss";
 
 .head{
+    font-family: 'molot';
+    margin-right: 40px;
+    display: flex;
     margin-left: 30px;
+    align-items: center;
+    height: 50px;
     h2{
+        flex: 0 0 10%;
         color: $maincolor;
+    }
+    p{
+        //text-decoration: underline;
+        word-spacing:-4px;
+       
+        letter-spacing: -1px;
+        font-size: 14px;
+        font-family: 'rubik mono';
+        display: grid;
+        grid-template-columns: 150px 62px;
+        justify-content: end;
+        flex: 1 1 20%;
+        color: white;
+        .active{
+            &::after{
+                content: '';
+                left: 0px;
+            }
+        }
+        span{
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            &::after{
+                content: '';
+                transition: 1s;
+                position: absolute;
+                background-color: white;
+                height: 2px;
+                width: 90%;
+                left: -200px;
+                top: 14px;
+                box-sizing: border-box;
+                border-radius: 2px;
+                border: 1px solid white;
+            }
+        }
     }
 }
 main{
     margin: 30px;
-    margin-top: 20px;
+    margin-top: 0px;
     @include neon;
     border: 5px solid $maincolor;
     #afishaBlock{

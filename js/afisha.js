@@ -1,32 +1,33 @@
-let currentPos = 0;
-let convAfish = document.getElementById('conveyorAfish');
-let widthA;
-let widthCont;
-let maxPos;
-let arrRA = document.getElementById('arrRA');
-let arrLA = document.getElementById('arrLA');
-let posters = document.querySelectorAll('.poster');
-let posterW = posters[0].offsetWidth + 40;
-let shag = posterW;
-let countP = posters.length;
+let hashA = window.location.hash;
+console.log(hashA);
 
-let visiblePoster;
-
-arrLA.addEventListener('click', function(){
-    currentPos += shag;
-    currentPos = Math.min(0, currentPos);
-    move();
-});
-arrRA.addEventListener('click', function(){
-    widthCont = document.getElementById('afishaContent').offsetWidth;
-    visiblePoster = widthCont / posterW;
-    let tmp = posterW*(Math.trunc(visiblePoster) - visiblePoster);
-    maxPos = (countP - Math.trunc(visiblePoster)) * (posterW) + tmp; 
-    currentPos -= shag;
-    currentPos = Math.max(currentPos, -(maxPos + 50))
-    move();
-});
-
-function move(){
-    convAfish.style.transform = `translatex(${currentPos}px)`;
+let nowB = document.getElementById('now');
+let soonB = document.getElementById('soon');
+checkHash();
+window.addEventListener('hashchange', checkHash);
+nowB.addEventListener('click',function(){
+    hashA = window.location.hash;
+    if(hashA != '#now')
+    location.hash = "now";
+})
+soonB.addEventListener('click',function(){
+    hashA = window.location.hash;
+    if(hashA != '#soon')
+    location.hash = "soon";
+})
+function checkHash(){
+    hashA = window.location.hash;
+    if(hashA != '#now' && hashA != '#soon')
+    {
+        location.hash = "now";
+        hashA ='#now';
+    }
+    if(hashA == '#now'){
+        nowB.classList.add('active');
+        soonB.classList.remove('active');
+    }
+    if(hashA == '#soon'){
+        nowB.classList.remove('active');
+        soonB.classList.add('active');
+    }
 }

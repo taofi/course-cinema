@@ -1,13 +1,52 @@
 .head {
+  font-family: "molot";
+  margin-right: 40px;
+  display: flex;
   margin-left: 30px;
+  align-items: center;
+  height: 50px;
 }
 .head h2 {
+  flex: 0 0 10%;
   color: rgb(32, 205, 185);
+}
+.head p {
+  word-spacing: -4px;
+  letter-spacing: -1px;
+  font-size: 14px;
+  font-family: "rubik mono";
+  display: grid;
+  grid-template-columns: 150px 62px;
+  justify-content: end;
+  flex: 1 1 20%;
+  color: white;
+}
+.head p .active::after {
+  content: "";
+  left: 0px;
+}
+.head p span {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.head p span::after {
+  content: "";
+  transition: 1s;
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 90%;
+  left: -200px;
+  top: 14px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid white;
 }
 
 main {
   margin: 30px;
-  margin-top: 20px;
+  margin-top: 0px;
   box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   border: 5px solid rgb(32, 205, 185);
 }
