@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+
+main {
+  padding: 60px;
+  color: white;
+  font-weight: 100;
+  font-family: "Molot";
+}
+main .intro h2 {
+  font-size: 40px;
+  margin: 20px;
+  margin-top: 0px;
+}
+main .intro p {
+  margin: 20px;
+  font-size: 30px;
+}
+main .intro img {
+  margin: 10px;
+  width: 100%;
+}
+main .second p {
+  position: relative;
+}
+main .second p img {
+  position: relative;
+}/*# sourceMappingURL=aboutCin.css.map */

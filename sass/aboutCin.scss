@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+
+main{
+    padding: 60px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Molot';
+    .intro{
+        h2{
+            font-size: 40px;
+            margin: 20px;
+            margin-top: 0px;
+        }
+        p{
+            margin: 20px;
+            font-size: 30px;
+        }
+        img{
+            margin: 10px;
+            width: 100%;
+        }
+    }
+    .second{
+        p{
+            position: relative;
+            img{
+                position: relative;
+            }
+        }
+    }
+}

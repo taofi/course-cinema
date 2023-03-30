@@ -45,6 +45,7 @@
 }
 
 main {
+  background-color: rgba(15, 15, 15, 0.856);
   margin: 30px;
   margin-top: 0px;
   box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
@@ -66,7 +67,7 @@ main #afishaBlock .poster {
   box-shadow: 0px 0px 8px rgb(32, 205, 185);
   border: 4px solid rgb(32, 205, 185);
   flex: 0 0 250px;
-  width: 250px;
+  width: 200px;
 }
 main #afishaBlock .poster img {
   height: 100%;
