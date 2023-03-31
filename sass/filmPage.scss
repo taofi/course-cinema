@@ -93,3 +93,18 @@ main{
         }
     }
 }
+
+#error404{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'molot';
+    z-index: 404;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0E0E0E;
+}

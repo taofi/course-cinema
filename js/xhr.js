@@ -1,10 +1,10 @@
-const requestURL = 'film.json';
+const requestURL = 'https://raw.githubusercontent.com/taofi/course-cinema/master/json/film.json';
 
 
 
 
 let film, 
-    hashA = window.location.hash.substring(1),
+    hashA,
     nameF = document.getElementById('name'),
     nameF2 = document.getElementById('name2'),
     shortReview = document.getElementById('shortReview'),
@@ -13,23 +13,41 @@ let film,
     review = document.getElementById('review'),
     thrillerVid = document.getElementById('thrillerVid');
 
+
+
  
 function openJson(){
+    hashA = window.location.hash.substring(1)
     const xhr = new XMLHttpRequest
     xhr.open('GET', requestURL)
     xhr.responseType = 'json'
 
-    console.log(hashA);
+   // console.log(hashA);
     xhr.onload = () => {
     film = xhr.response
    // console.log( film)
     let index;
+    let isFound = false;
     for( index in film){
        // console.log(film[index].id)
         if(hashA == film[index].id){
-            console.log(hashA)
+           // console.log(hashA)
+            isFound = true;
             break
         }
+    }
+    if(!isFound){
+        let wrap = document.getElementById('wrap');
+        let error404div = document.createElement("div");
+        error404div.id ='error404';
+        error404div.textContent = 'error 404 page not found';
+        wrap.appendChild(error404div);
+        document.getElementById('bodyid').style.overflow = 'hidden'
+    }else{
+        let error404div = document.getElementById('error404');
+        if(error404div != null)
+            error404div.remove();
+        document.getElementById('bodyid').style.overflow = 'auto'
     }
     //console.log(film[index])
     nameF.textContent = film[index].name
