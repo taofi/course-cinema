@@ -11,7 +11,13 @@
     <title>Cinematic</title><
 </head>
 <body id="bodyid">
-    <div id="wrap">
+    <div id="loading">
+        <div class="imbox">
+            <img id="bodyload" src="../images/loadbody.svg" alt=""><img id="circle1" src="../images/circle.svg" alt=""><img id="circle2" src="../images/circle.svg" alt="">
+            <p>loading...</p>
+        </div>
+    </div>
+    <div id="wrap">   
         <div class="main_contaner">
             <nav>
                 <a href="main.html"><img class="icon" src="../images/icon.svg" alt="dots icon" width="62px"></a>
@@ -29,7 +35,7 @@
                     <figure>
                         <div class="imgCont">
                             <div class="shadow"></div>
-                            <img id="posterImg" src="../images/posters/parasitesposter.jpg" alt="">
+                            <img id="posterImg" src="" alt="">
                         </div>
                         <figcaption>
                             <h2 id="name"></h2>
@@ -53,5 +59,6 @@
     </div>
     <script src="../js/burger_script.js"></script>
     <script src="../js/xhr.js"></script>
+    <script src="../js/loading.js"></script>
 </body>
 </html>

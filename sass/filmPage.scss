@@ -10,13 +10,13 @@
     overflow: hidden;
 }
 main{
-    padding: 0;
     margin: 0;
     background-color: #0E0E0E;
     width: 100%;
     color: white;
     font-family: 'Molot';
     font-weight: 100;
+
     .present{
         figure{ 
             .imgCont{
@@ -41,6 +41,7 @@ main{
         figcaption{
             padding-left: 50px;
             position: relative;
+            padding-right: 50px;
             transform: translateY(-150px);
             h2{
                 font-size: 50px;
@@ -51,7 +52,7 @@ main{
                 color: #C1C1C1;
             }
             #shortReview{
-                padding-right: 50px;
+                
                 font-size: 30px;
             } 
             a{
@@ -90,6 +91,74 @@ main{
             @include neon;
             width: 60%;
             aspect-ratio: 569/315; //width="560" height="315"
+        }
+    }
+    @media (min-width: 450px) and (max-width: 800px) {
+        .present{
+            figcaption{
+                padding-left: 25px;
+                transform: translateY(-100px);
+                h2{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 30px;
+                }
+                #shortReview{
+                    font-size: 25px;
+                }
+            }
+            margin-bottom: -50px;
+        }
+        .reviewBlock{
+            padding-left: 25px;
+            padding-right: 25px;
+            h2{
+                font-size: 30px;
+            }
+            p{
+                font-size: 20px;
+                color: #C1C1C1;
+            }
+        }
+        .thriller{
+             #thrillerVid{
+                 width: 80%;
+            }
+        }
+    }
+    @media  (max-width: 450px) {
+        .present{
+            figcaption{
+                padding-left: 15px;
+                transform: translateY(-50px);
+                h2{
+                    font-size:35px;
+                }
+                p{
+                    font-size: 25px;
+                }
+                #shortReview{
+                    font-size: 20px;
+                }
+            }
+            margin-bottom: 0px;
+        }
+        .reviewBlock{
+            padding-left: 15px;
+            padding-right: 15px;
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+                color: #C1C1C1;
+            }
+        }
+        .thriller{
+             #thrillerVid{
+                 width: 90%;
+            }
         }
     }
 }

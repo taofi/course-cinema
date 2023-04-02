@@ -9,7 +9,6 @@
 }
 
 main {
-  padding: 0;
   margin: 0;
   background-color: #0E0E0E;
   width: 100%;
@@ -40,6 +39,7 @@ main .present figure .imgCont img {
 main .present figcaption {
   padding-left: 50px;
   position: relative;
+  padding-right: 50px;
   transform: translateY(-150px);
 }
 main .present figcaption h2 {
@@ -51,7 +51,6 @@ main .present figcaption p {
   color: #C1C1C1;
 }
 main .present figcaption #shortReview {
-  padding-right: 50px;
   font-size: 30px;
 }
 main .present figcaption a {
@@ -98,6 +97,70 @@ main .thriller #thrillerVid {
   box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   width: 60%;
   aspect-ratio: 569/315;
+}
+@media (min-width: 450px) and (max-width: 800px) {
+  main .present {
+    margin-bottom: -50px;
+  }
+  main .present figcaption {
+    padding-left: 25px;
+    transform: translateY(-100px);
+  }
+  main .present figcaption h2 {
+    font-size: 40px;
+  }
+  main .present figcaption p {
+    font-size: 30px;
+  }
+  main .present figcaption #shortReview {
+    font-size: 25px;
+  }
+  main .reviewBlock {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  main .reviewBlock h2 {
+    font-size: 30px;
+  }
+  main .reviewBlock p {
+    font-size: 20px;
+    color: #C1C1C1;
+  }
+  main .thriller #thrillerVid {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  main .present {
+    margin-bottom: 0px;
+  }
+  main .present figcaption {
+    padding-left: 15px;
+    transform: translateY(-50px);
+  }
+  main .present figcaption h2 {
+    font-size: 35px;
+  }
+  main .present figcaption p {
+    font-size: 25px;
+  }
+  main .present figcaption #shortReview {
+    font-size: 20px;
+  }
+  main .reviewBlock {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main .reviewBlock h2 {
+    font-size: 25px;
+  }
+  main .reviewBlock p {
+    font-size: 15px;
+    color: #C1C1C1;
+  }
+  main .thriller #thrillerVid {
+    width: 90%;
+  }
 }
 
 #error404 {

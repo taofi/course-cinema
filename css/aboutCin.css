@@ -10,22 +10,82 @@ main {
   font-weight: 100;
   font-family: "Molot";
 }
+main img {
+  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  border: 2px solid rgb(32, 205, 185);
+  border-radius: 5px;
+}
+main p {
+  margin: 20px;
+  font-size: 30px;
+}
 main .intro h2 {
   font-size: 40px;
   margin: 20px;
   margin-top: 0px;
 }
-main .intro p {
-  margin: 20px;
-  font-size: 30px;
-}
 main .intro img {
-  margin: 10px;
   width: 100%;
 }
-main .second p {
-  position: relative;
+main .bar {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
-main .second p img {
-  position: relative;
+main .bar img {
+  width: 100%;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+main .bar p {
+  text-indent: 15px;
+}
+main .cassa {
+  margin: 10px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+main .cassa img {
+  width: 100%;
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+main .cassa p {
+  text-indent: 15px;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  main {
+    padding: 20px;
+  }
+  main .cassa, main .bar {
+    grid-template-columns: 50% 50%;
+  }
+  main p {
+    font-size: 25px;
+  }
+  main .intro h2 {
+    margin: 0;
+    font-size: 35px;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  main .intro h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+  main .intro img {
+    margin: 0;
+  }
+  main .cassa, main .bar {
+    margin-top: 10px;
+    grid-template-columns: 100%;
+  }
+  main p {
+    margin: 0;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=aboutCin.css.map */

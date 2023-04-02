@@ -17,6 +17,11 @@ let film,
 
  
 function openJson(){
+    let load = document.getElementById('loading');
+    load.style.transition = "0";
+    load.style.opacity = '1';
+    load.style.zIndex = '500';
+
     hashA = window.location.hash.substring(1)
     const xhr = new XMLHttpRequest
     xhr.open('GET', requestURL)
@@ -62,6 +67,9 @@ function openJson(){
     xhr.onerror = () =>{
     console.error(xhr.response)
     }
+    load.style.transition = "0.2s";
+    load.style.opacity = '0';
+    load.style.zIndex = '-4';
     xhr.send()
 }
 
