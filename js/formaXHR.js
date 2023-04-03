@@ -56,13 +56,7 @@ function openJson(){
     }
     //console.log(film[index])
     nameF.textContent = film[index].name
-    nameF2.textContent = film[index].name2
-    shortReview.textContent = film[index].shortReview
     posterImg.src = film[index].posterImg
-    genre.textContent = film[index].genre
-    review.textContent = film[index].review
-    thrillerVid.src = film[index].thrillerURL
-    document.getElementById('formHref').href = "forma.html#" + hashA;
     }
 
     xhr.onerror = () =>{
