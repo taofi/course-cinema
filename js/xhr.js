@@ -62,6 +62,12 @@ function openJson(){
     genre.textContent = film[index].genre
     review.textContent = film[index].review
     thrillerVid.src = film[index].thrillerURL
+    if(film[index].soon == "1"){
+        document.getElementById('formHref').style.display = 'none';
+    }
+    else{
+        document.getElementById('formHref').style.display = '';
+    }
     document.getElementById('formHref').href = "forma.html#" + hashA;
     }
 
