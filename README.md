@@ -1,2 +1,2 @@
 # course-cinema
-for non commercial use only means
+for non commercial use only
