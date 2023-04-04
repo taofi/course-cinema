@@ -64,7 +64,17 @@
         flex-wrap: nowrap;
         align-items: stretch;
         .poster{
-
+            .more{
+                margin: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                font-size: 18px;
+                font-family: 'molot';
+                color: white;
+                justify-content: center;
+                align-items: center;
+            }
             @include neon;
             position: relative;
             box-sizing: border-box;
@@ -78,6 +88,7 @@
                 height: 100%;
             }
             .infoP{
+                
                 box-sizing: border-box;
                 padding: 15px;
                 opacity: 0;

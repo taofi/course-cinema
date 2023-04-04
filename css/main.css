@@ -352,6 +352,17 @@
   margin: 20px;
   align-items: center;
 }
+#afishaContent #conveyorAfish .poster .more {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 18px;
+  font-family: "molot";
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
 #afishaContent #conveyorAfish .poster img {
   height: 100%;
 }
