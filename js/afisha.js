@@ -3,6 +3,8 @@ console.log(hashA);
 
 let nowB = document.getElementById('now');
 let soonB = document.getElementById('soon');
+let nowCont = document.getElementById('nowCont');
+let soonCont = document.getElementById('soonCont');
 checkHash();
 window.addEventListener('hashchange', checkHash);
 nowB.addEventListener('click',function(){
@@ -25,9 +27,13 @@ function checkHash(){
     if(hashA == '#now'){
         nowB.classList.add('active');
         soonB.classList.remove('active');
+        nowCont.style.display = '';
+        soonCont.style.display = 'none';
     }
     if(hashA == '#soon'){
         nowB.classList.remove('active');
         soonB.classList.add('active');
+        soonCont.style.display = '';
+        nowCont.style.display = 'none';
     }
 }

@@ -152,7 +152,12 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 1670px) {
+@media (min-width: 1500px) {
+  #popular .slider_pst .data_img img {
+    left: 15x;
+  }
+}
+@media (min-width: 1660px) {
   #popular .slider_pst .data_img img {
     width: 100%;
     height: auto;
@@ -253,6 +258,7 @@
     background: linear-gradient(86deg, rgb(1, 2, 20) 0%, rgb(0, 0, 0) 52%, rgba(84, 6, 17, 0) 56%, rgba(121, 9, 9, 0) 90%, rgb(0, 0, 0) 95%, rgb(0, 3, 29) 100%);
   }
   #popular .slider_pst img {
+    position: relative;
     left: 100px;
   }
 }

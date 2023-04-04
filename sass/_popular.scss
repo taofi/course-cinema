@@ -143,7 +143,10 @@
                 height: 100%;
                 width: auto;
                 object-fit:cover;
-                @media (min-width: 1670px) {
+                @media (min-width: 1500px) {  
+                    left: 15x;
+                }
+                @media (min-width: 1660px) {
                     width: 100%;
                     height: auto;   
                     top: -20px;
@@ -237,6 +240,7 @@
                 background: linear-gradient(86deg, rgb(1, 2, 20) 0%, rgba(0,0,0,1) 52%, rgba(84,6,17,0) 56%, rgba(121,9,9,0) 90%, rgba(0,0,0,1) 95%, rgb(0, 3, 29) 100%);
             }
             img{
+                position: relative;
                 left: 100px;
             }
         }

@@ -151,6 +151,25 @@ nav p a {
   }
 }
 
+footer {
+  margin-left: 50px;
+  margin-right: 50px;
+  border-top: 1px solid #585858;
+  display: grid;
+  justify-content: center;
+  color: #585858;
+}
+footer img {
+  margin-left: 10px;
+  width: 40px;
+}
+footer p {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 html, body {
   min-height: 100vh;
   height: 100%;
@@ -216,5 +235,5 @@ a {
   margin: 12px;
   width: calc(100% - 34px);
   padding: 0;
-  margin-top: 0px;
+  margin-top: 10px;
 }/*# sourceMappingURL=theme.css.map */

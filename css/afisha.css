@@ -2,7 +2,7 @@
   font-family: "molot";
   margin-right: 40px;
   display: flex;
-  margin-left: 30px;
+  margin-left: 10%;
   align-items: center;
   height: 50px;
 }
@@ -11,14 +11,15 @@
   color: rgb(32, 205, 185);
 }
 .head p {
+  margin-right: 10%;
   word-spacing: -4px;
   letter-spacing: -1px;
   font-size: 14px;
   font-family: "rubik mono";
   display: grid;
-  grid-template-columns: 150px 62px;
+  grid-template-columns: 150px 60px;
   justify-content: end;
-  flex: 1 1 20%;
+  flex: 1 1;
   color: white;
 }
 .head p .active::after {
@@ -43,21 +44,43 @@
   border-radius: 2px;
   border: 1px solid white;
 }
+.head p #soon {
+  width: 65px;
+}
+@media (max-width: 500px) {
+  .head {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .head h2 {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .head {
+    height: 70px;
+  }
+  .head p {
+    margin-top: 40px;
+    margin-right: 0;
+    grid-template-columns: 150px;
+    grid-template-rows: repeat(2, 30px);
+  }
+}
 
 main {
-  background-color: rgba(15, 15, 15, 0.856);
   margin: 30px;
   margin-top: 0px;
-  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-  border: 5px solid rgb(32, 205, 185);
-}
-main #afishaBlock {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 0;
 }
-main #afishaBlock .poster {
+main .afishaBlock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0;
+  width: 1165px;
+}
+main .afishaBlock .poster {
   margin: 20px;
   position: relative;
   aspect-ratio: 2/3;
@@ -66,13 +89,12 @@ main #afishaBlock .poster {
   overflow: hidden;
   box-shadow: 0px 0px 8px rgb(32, 205, 185);
   border: 4px solid rgb(32, 205, 185);
-  flex: 0 0 250px;
-  width: 200px;
+  width: 250px;
 }
-main #afishaBlock .poster img {
+main .afishaBlock .poster img {
   height: 100%;
 }
-main #afishaBlock .poster .infoP {
+main .afishaBlock .poster .infoP {
   box-sizing: border-box;
   padding: 15px;
   opacity: 0;
@@ -87,18 +109,18 @@ main #afishaBlock .poster .infoP {
   font-size: 15px;
   font-family: "molot";
 }
-main #afishaBlock .poster .infoP p {
+main .afishaBlock .poster .infoP p {
   padding: 5px;
   text-align: begin;
   margin: 0;
 }
-main #afishaBlock .poster .infoP p .janr {
+main .afishaBlock .poster .infoP p .janr {
   color: rgb(105, 104, 104);
   display: block;
   text-shadow: 0 0 4px rgb(180, 180, 180);
   margin-bottom: 5px;
 }
-main #afishaBlock .poster .infoP p .name {
+main .afishaBlock .poster .infoP p .name {
   width: 100%;
   color: white;
   display: block;
@@ -106,7 +128,7 @@ main #afishaBlock .poster .infoP p .name {
   text-align: left;
   text-shadow: 0 0 4px rgb(0, 0, 0);
 }
-main #afishaBlock .poster .infoP a {
+main .afishaBlock .poster .infoP a {
   box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   font-size: 15px;
   height: 35px;
@@ -122,23 +144,49 @@ main #afishaBlock .poster .infoP a {
   transition: color 0.2s, background-color 0.2s;
   background-color: rgba(0, 0, 0, 0.422);
 }
-main #afishaBlock .poster .infoP a:hover {
+main .afishaBlock .poster .infoP a:hover {
   color: white;
   background-color: rgba(32, 205, 185, 0.808);
   border-color: rgb(175, 231, 225);
 }
 @media (max-width: 375px) {
-  main #afishaBlock .poster .infoP {
+  main .afishaBlock .poster .infoP {
     grid-template-rows: 160px 60px;
     font-size: 12px;
     padding: 11px;
   }
 }
-main #afishaBlock .poster:hover .infoP {
+main .afishaBlock .poster:hover .infoP {
   opacity: 1;
 }
 @media (max-width: 375px) {
-  main #afishaBlock .poster {
+  main .afishaBlock .poster {
     flex: 0 0 160px;
+  }
+}
+@media (max-width: 1200px) {
+  main .afishaBlock {
+    grid-template-columns: repeat(3, 1fr);
+    width: 720px;
+  }
+  main .afishaBlock .poster {
+    width: 200px;
+  }
+}
+@media (max-width: 770px) {
+  main .afishaBlock {
+    grid-template-columns: repeat(2, 1fr);
+    width: 470px;
+  }
+}
+@media (max-width: 480px) {
+  main .afishaBlock {
+    width: 240px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  main {
+    margin: 0px;
   }
 }/*# sourceMappingURL=afisha.css.map */
