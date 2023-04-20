@@ -3,7 +3,6 @@
 @import "_place.scss";
 
 main{
-
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +11,7 @@ main{
 }
 
 .placeChoose{
-   // background-color: blue;
+    //background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +21,7 @@ main{
     flex-wrap: wrap;
     font-family: 'molot';
     color: white;
+    //background-color: red;
     .placeCont{
         width: 50%;
         //background-color: red;
@@ -42,29 +42,23 @@ main{
         font-size: 20px;
         color: rgb(190, 190, 190);
     }
-}
-
-.info{
-
-    color: white;
-    font-family: 'molot';
-    font-size: 30px;
-    figure{
-        width: 200px;
-        img{
-            width: 100%;
+    @media (max-width: 430px) {
+        padding: 0px;
+        h2{
+            font-size: 17px;
+            span{
+                font-size:14px
+            }
         }
-        figcaption{
-            text-align: center;
-            margin: 0;
-            font-size: 30px;
-            font-weight: 100;
+        p{
+            font-size: 15px;
         }
     }
 }
 
+
 form{
-    //background-color: red;
+   // background-color: red;
     color: white;
     font-size: 25px;
     font-family: 'rubik mono';
@@ -95,5 +89,16 @@ form{
         height: 30px;
         margin-left: 20px;
         font-family: 'rubik mono';
+    }
+    @media (max-width: 430px) {
+        font-size: 16px;
+        fieldset{
+            width: 250px;
+            label{
+                input{
+                    height: 20px;
+                }
+            }
+        }
     }
 }

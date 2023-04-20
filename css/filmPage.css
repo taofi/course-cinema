@@ -21,15 +21,22 @@ main .present {
 }
 main .present figure .imgCont {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 main .present figure .imgCont .shadow {
   position: absolute;
   width: 100%;
   height: 100%;
+  background: -o-radial-gradient(50% 50%, 50% 50%, rgba(0, 0, 0, 0) 59.38%, #0E0E0E 90%, #0E0E0E 100%);
   background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 59.38%, #0E0E0E 90%, #0E0E0E 100%);
   background-size: 100%;
 }
@@ -40,7 +47,9 @@ main .present figcaption {
   padding-left: 50px;
   position: relative;
   padding-right: 50px;
-  transform: translateY(-150px);
+  -webkit-transform: translateY(-150px);
+      -ms-transform: translateY(-150px);
+          transform: translateY(-150px);
 }
 main .present figcaption h2 {
   font-size: 50px;
@@ -53,8 +62,16 @@ main .present figcaption .rating {
   margin-bottom: 10px;
 }
 main .present figcaption .rating svg {
+  margin-right: -6px;
+  margin-left: -3px;
   width: 35px;
+  height: 35px;
   cursor: pointer;
+}
+main .present figcaption .rating .star {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 main .present figcaption #shortReview {
   font-size: 30px;
@@ -66,14 +83,23 @@ main .present figcaption a {
   width: 250px;
   padding: 5px;
   font-size: 30px;
-  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   border: 2px solid rgb(32, 205, 185);
   border-radius: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgb(32, 205, 185);
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
 }
 main .present figcaption a:hover {
@@ -91,77 +117,119 @@ main .reviewBlock p {
   font-size: 30px;
   color: #C1C1C1;
 }
-main .commentCont {
+main .commentSec {
   margin: 20px;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-main .commentCont h2 {
-  flex: 0 1 100%;
+main .commentSec h2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
 }
-main .commentCont input {
-  height: 25px;
-  flex: 0 1 100%;
+main .commentSec input {
+  min-height: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
   margin: 15px;
   margin-left: 0;
   margin-right: 0;
-  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   border: 2px solid rgb(32, 205, 185);
   border-radius: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgb(32, 205, 185);
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
   text-align: left;
   padding-left: 10px;
   border-radius: 5px;
   background-color: #1A181D;
 }
-main .commentCont input:hover {
+main .commentSec input:hover {
   color: white;
   background-color: rgba(32, 205, 185, 0.6);
 }
-main .commentCont #comBt {
+main .commentSec #comBt {
   cursor: pointer;
   padding: 5px;
   font-family: "rubik mono";
   background-color: #1A181D;
-  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   border: 2px solid rgb(32, 205, 185);
   border-radius: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgb(32, 205, 185);
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
-  flex: 0 0 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
 }
-main .commentCont #comBt:hover {
+main .commentSec #comBt:hover {
   color: white;
   background-color: rgba(32, 205, 185, 0.6);
 }
-main .commentCont .comment {
+main .commentSec #commentCont {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+main .commentSec #commentCont .comment {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-main .commentCont .comment img {
-  width: 60px;
+main .commentSec #commentCont .comment img {
+  width: 35px;
   margin-right: 15px;
 }
 main .thriller {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 main .thriller #thrillerVid {
   border: 3px solid rgb(32, 205, 185);
-  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   width: 60%;
   aspect-ratio: 569/315;
 }
@@ -171,7 +239,9 @@ main .thriller #thrillerVid {
   }
   main .present figcaption {
     padding-left: 25px;
-    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   main .present figcaption h2 {
     font-size: 40px;
@@ -203,7 +273,9 @@ main .thriller #thrillerVid {
   }
   main .present figcaption {
     padding-left: 15px;
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   main .present figcaption h2 {
     font-size: 35px;
@@ -230,10 +302,17 @@ main .thriller #thrillerVid {
   }
 }
 
-#error404 {
+#error404, #loadingError {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-family: "molot";
   z-index: 404;
@@ -242,4 +321,4 @@ main .thriller #thrillerVid {
   width: 100vw;
   height: 100vh;
   background-color: #0E0E0E;
-}/*# sourceMappingURL=filmPage.css.map */
+}

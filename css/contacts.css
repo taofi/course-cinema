@@ -19,14 +19,15 @@ section h3 span, section p span {
   }
 }
 section #mapCin {
-  margin-top: 20px;
-  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   overflow: hidden;
   border: 5px solid rgb(32, 205, 185);
 }
 @media (max-width: 768px) {
   section {
     margin: 20px;
-    grid-template-rows: repeat(4, 40px) calc(100% - 160px);
+    grid-template-rows: repeat(4, 45px) calc(100% - 160px);
   }
-}/*# sourceMappingURL=contacts.css.map */
+}
