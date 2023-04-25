@@ -12,12 +12,17 @@ let film,
     genre = document.getElementById('genre'),
     review = document.getElementById('review'),
     thrillerVid = document.getElementById('thrillerVid');
+    let load = document.getElementById('loading');
 
-
+    posterImg.addEventListener('load', function() {
+        load.style.transition = "0.2s";
+        load.style.opacity = '0';
+        load.style.zIndex = '-4';
+    });
 
  
 function openJson(){
-    let load = document.getElementById('loading');
+   
     load.style.transition = "0";
     load.style.opacity = '1';
     load.style.zIndex = '500';
@@ -25,10 +30,15 @@ function openJson(){
     hashA = window.location.hash.substring(1)
     const xhr = new XMLHttpRequest
     xhr.open('GET', requestURL)
+    
     xhr.responseType = 'json'
 
-   // console.log(hashA);
+
     xhr.onload = () => {
+    let loadError = document.getElementById('loadingError');
+    if(loadError != null)
+         loadError.remove();
+    document.getElementById('bodyid').style.overflow = 'auto'
     film = xhr.response
    // console.log( film)
     let index;
@@ -72,16 +82,20 @@ function openJson(){
     }
 
     xhr.onerror = () =>{
+        let wrap = document.getElementById('wrap');
+        let loadError = document.createElement("div");
+        loadError.id ='loadingError';
+        loadError.textContent = 'there may be problems with the server or internet connection';
+        wrap.appendChild(loadError);
+        document.getElementById('bodyid').style.overflow = 'hidden';
     console.error(xhr.response)
     }
-    load.style.transition = "0.2s";
-    load.style.opacity = '0';
-    load.style.zIndex = '-4';
+   
     xhr.send()
 }
 
 
 
 
-openJson()
+openJson();
 window.addEventListener('hashchange', openJson);

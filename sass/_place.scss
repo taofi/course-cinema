@@ -1,6 +1,6 @@
 .place{
     aspect-ratio: 1;
-    min-width: 15px;
+    min-width: 10px;
     width: 4.5%;
     display: inline-block;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
     justify-content: center;
 }
 .placeCont{
-    min-width: 400px;
+    min-width: 0px;
     //background-color: red;
     .screen{
      //  min-width: 100px;

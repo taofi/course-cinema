@@ -1,12 +1,15 @@
 .place {
   aspect-ratio: 1;
-  min-width: 15px;
+  min-width: 10px;
   width: 4.5%;
   display: inline-block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: white;
   border-radius: 30% 30% 0px 0px;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   margin: 3px;
 }
@@ -15,12 +18,16 @@
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .placeCont {
-  min-width: 400px;
+  min-width: 0px;
 }
 .placeCont .screen {
   margin: 10%;
@@ -32,20 +39,37 @@
 
 main {
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .placeChoose {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   padding: 25px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: "molot";
   color: white;
 }
@@ -55,7 +79,9 @@ main {
 }
 .placeChoose h2 {
   text-align: center;
-  flex: 0 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   font-weight: 100;
   margin: 0;
 }
@@ -68,23 +94,19 @@ main {
   font-size: 20px;
   color: rgb(190, 190, 190);
 }
-
-.info {
-  color: white;
-  font-family: "molot";
-  font-size: 30px;
-}
-.info figure {
-  width: 200px;
-}
-.info figure img {
-  width: 100%;
-}
-.info figure figcaption {
-  text-align: center;
-  margin: 0;
-  font-size: 30px;
-  font-weight: 100;
+@media (max-width: 430px) {
+  .placeChoose {
+    padding: 0px;
+  }
+  .placeChoose h2 {
+    font-size: 17px;
+  }
+  .placeChoose h2 span {
+    font-size: 14px;
+  }
+  .placeChoose p {
+    font-size: 15px;
+  }
 }
 
 form {
@@ -104,14 +126,23 @@ form fieldset label {
 form fieldset label input {
   height: 25px;
   margin: 0;
-  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   border: 2px solid rgb(32, 205, 185);
   border-radius: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgb(32, 205, 185);
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
   text-align: left;
   padding-left: 10px;
@@ -126,14 +157,23 @@ form #sub {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 5px;
   font-size: 12px;
-  box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
   border: 2px solid rgb(32, 205, 185);
   border-radius: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgb(32, 205, 185);
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
   width: 120px;
   height: 30px;
@@ -143,4 +183,15 @@ form #sub {
 form #sub:hover {
   color: white;
   background-color: rgba(32, 205, 185, 0.6);
-}/*# sourceMappingURL=forma.css.map */
+}
+@media (max-width: 430px) {
+  form {
+    font-size: 16px;
+  }
+  form fieldset {
+    width: 250px;
+  }
+  form fieldset label input {
+    height: 20px;
+  }
+}
