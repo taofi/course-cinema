@@ -197,24 +197,5 @@
         "soon": "0",
         "posterImg": "../images/posters/astral2010.jpg"
     },
-    {
-        "id": "",
-        "name": "",
-        "name2": "",
-        "shortReview": "",
-        "genre":"",
-        "review":"",
-        "thrillerURL": "https://www.youtube.com/embed/",
-        "posterImg": "../images/posters/"
-    },
-    {
-        "id": "test",
-        "name": "test2",
-        "name2": "test3",
-        "shortReview": "lorem",
-        "genre":"да, триллер, комедия",
-        "review":"план по трудоустройству сестры.",
-        "thrillerURL": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "posterImg": "../images/posters/cassarecardo.jpg"
-    }
+    
 ]
