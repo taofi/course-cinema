@@ -68,6 +68,6 @@ function changeWindow() {
         currentPos = 0;
         move();
     }else{
-        document.getElementById('afishaContent').transform = `translatex(0px)';
+        document.getElementById('afishaContent').transform = 'translatex(0px)';
     }
 }

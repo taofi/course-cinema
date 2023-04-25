@@ -2,10 +2,7 @@
 @import "_mixin.scss";
 @import "_navM.scss";
 @import "_footer.scss";
-html, body {
-    min-height: 100vh;
-    height: 100%;
-}
+
 body{
     position: relative;
     background-color: $bgcolor;

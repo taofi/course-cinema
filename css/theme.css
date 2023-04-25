@@ -213,11 +213,6 @@ footer p {
           justify-content: center;
 }
 
-html, body {
-  min-height: 100vh;
-  height: 100%;
-}
-
 body {
   position: relative;
   background-color: #1A181D;

@@ -1,2 +1,0 @@
-
-location.hash = "my-data"; 
