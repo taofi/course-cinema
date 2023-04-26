@@ -83,9 +83,9 @@ main .present figcaption a {
   width: 250px;
   padding: 5px;
   font-size: 30px;
-  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-  border: 2px solid rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+          box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  border: 2px solid #20cdb9;
   border-radius: 10px;
   text-align: center;
   display: -webkit-box;
@@ -97,7 +97,7 @@ main .present figcaption a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: rgb(32, 205, 185);
+  color: #20cdb9;
   -webkit-transition: color 0.2s, background-color 0.2s;
   -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
@@ -139,9 +139,9 @@ main .commentSec input {
   margin: 15px;
   margin-left: 0;
   margin-right: 0;
-  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-  border: 2px solid rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+          box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  border: 2px solid #20cdb9;
   border-radius: 10px;
   text-align: center;
   display: -webkit-box;
@@ -153,7 +153,7 @@ main .commentSec input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: rgb(32, 205, 185);
+  color: #20cdb9;
   -webkit-transition: color 0.2s, background-color 0.2s;
   -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
@@ -171,9 +171,9 @@ main .commentSec #comBt {
   padding: 5px;
   font-family: "rubik mono";
   background-color: #1A181D;
-  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-  border: 2px solid rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+          box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  border: 2px solid #20cdb9;
   border-radius: 10px;
   text-align: center;
   display: -webkit-box;
@@ -185,7 +185,7 @@ main .commentSec #comBt {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: rgb(32, 205, 185);
+  color: #20cdb9;
   -webkit-transition: color 0.2s, background-color 0.2s;
   -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
@@ -227,9 +227,9 @@ main .thriller {
           justify-content: center;
 }
 main .thriller #thrillerVid {
-  border: 3px solid rgb(32, 205, 185);
-  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
+  border: 3px solid #20cdb9;
+  -webkit-box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+          box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
   width: 60%;
   aspect-ratio: 569/315;
 }

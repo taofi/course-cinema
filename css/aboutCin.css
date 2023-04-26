@@ -11,9 +11,9 @@ main {
   font-family: "Molot";
 }
 main img {
-  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-  border: 2px solid rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+          box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  border: 2px solid #20cdb9;
   border-radius: 5px;
 }
 main p {

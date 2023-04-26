@@ -126,9 +126,9 @@ form fieldset label {
 form fieldset label input {
   height: 25px;
   margin: 0;
-  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-  border: 2px solid rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+          box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  border: 2px solid #20cdb9;
   border-radius: 10px;
   text-align: center;
   display: -webkit-box;
@@ -140,7 +140,7 @@ form fieldset label input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: rgb(32, 205, 185);
+  color: #20cdb9;
   -webkit-transition: color 0.2s, background-color 0.2s;
   -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
@@ -157,9 +157,9 @@ form #sub {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 5px;
   font-size: 12px;
-  -webkit-box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-          box-shadow: 0px 0px 8px rgb(32, 205, 185), inset 0px 0px 8px rgb(32, 205, 185);
-  border: 2px solid rgb(32, 205, 185);
+  -webkit-box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+          box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  border: 2px solid #20cdb9;
   border-radius: 10px;
   text-align: center;
   display: -webkit-box;
@@ -171,7 +171,7 @@ form #sub {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: rgb(32, 205, 185);
+  color: #20cdb9;
   -webkit-transition: color 0.2s, background-color 0.2s;
   -o-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
