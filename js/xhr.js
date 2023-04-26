@@ -1,4 +1,4 @@
-const requestURL = '../json/film.json';
+const requestURL = 'https://raw.githubusercontent.com/taofi/course-cinema/master/json/film.json';
 
 
 
