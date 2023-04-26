@@ -403,11 +403,6 @@
 #afisha .arrA:hover {
   background-color: rgba(4, 41, 46, 0.758);
 }
-@media (max-width: 320px) {
-  #afisha .arrA {
-    display: none;
-  }
-}
 #afisha #arrLA {
   left: 10px;
 }
@@ -606,11 +601,6 @@
 @media (max-width: 375px) {
   #afishaContent {
     padding-left: 0px;
-  }
-}
-@media (max-width: 320px) {
-  #afishaContent {
-    overflow: scroll;
   }
 }
 
