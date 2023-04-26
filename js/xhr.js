@@ -1,4 +1,4 @@
-const requestURL = 'https://raw.githubusercontent.com/taofi/course-cinema/master/json/film.json';
+const requestURL = '../json/film.json';
 
 
 
@@ -39,8 +39,8 @@ function openJson(){
     if(loadError != null)
          loadError.remove();
     document.getElementById('bodyid').style.overflow = 'auto'
-    film = xhr.response
-    console.log( film)
+    film = xhr.response;
+    console.log(film);
     let index;
     let isFound = false;
     for( index in film){
