@@ -40,7 +40,7 @@ function openJson(){
          loadError.remove();
     document.getElementById('bodyid').style.overflow = 'auto'
     film = xhr.response
-   // console.log( film)
+    console.log( film)
     let index;
     let isFound = false;
     for( index in film){
