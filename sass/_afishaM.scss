@@ -31,9 +31,6 @@
         &:hover{
             background-color: rgba(4, 41, 46, 0.758);
         }
-        @media (max-width: 320px) {
-            display: none;
-        }
     }
     #arrLA{
         left: 10px;
@@ -185,9 +182,5 @@
     }
     @media (max-width: 375px) {
         padding-left: 0px;
-    }
-   // padding: 2%;
-   @media (max-width: 320px) {
-    overflow: scroll;
     }
 }
