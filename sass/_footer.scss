@@ -5,14 +5,11 @@ footer{
     display: grid;
     justify-content: center;
     color: #585858;
-    img{
-        margin-left: 10px;
-        width: 40px;
-    }
+    img{margin-left: 10px;
+        width: 40px;}
     p{
         margin: 5px;
         display: flex;
         align-items: center;
-        justify-content: center;
-    }
+        justify-content: center;}
 }

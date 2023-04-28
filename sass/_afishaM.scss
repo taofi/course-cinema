@@ -4,39 +4,9 @@
     margin-top: 40px;
     display: flex;
     align-items: center;
-    .arrA{
-        background-color: rgba(0, 0, 0, 0.758);
-        box-sizing: border-box;
-        position: absolute;
-        width: 40px;
-        height: 60px;
-        @include neon;
-        border: 3px solid $maincolor;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5px;
-        cursor: pointer;
-        .img{
-            width: 100%;
-            height: 100%;
-            background-image: url(../images/arrow.svg);
-            background-size: 120%;
-            background-repeat:no-repeat;
-            background-position: -3px 7px;
-        }
-        z-index: 3;
-        transition: background-color 0.5s;
-        &:hover{
-            background-color: rgba(4, 41, 46, 0.758);
-        }
-    }
     #arrLA{
         left: 10px;
         &:active{
-            width: 38px;
-            height: 58px;
             transform: translateY(1px);
             left: 11px;
         }
@@ -45,8 +15,6 @@
         right: 10px;
         transform: rotate(180deg);
         &:active{
-            width: 38px;
-            height: 58px;
             transform: rotate(180deg), translateY(1px);
             right: 11px;
         }
@@ -55,25 +23,17 @@
         height: 300px;
     }
 }
-
-
-#afishaContent{
-    
+#afishaContent{  
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     @include neon;
-    //box-shadow: 0px 0px 8px $maincolor;
     border: 4px solid $maincolor;
     height: 100%;
-    width: 100%;
     overflow: hidden;
     padding-left: 20px;
-    
     #conveyorAfish{
         box-sizing: border-box;
-        padding: 0;
-        margin: 0;
         position: relative;
         transform: translatex(0px);
         transition: transform 0.8s;
@@ -84,8 +44,6 @@
         align-items: stretch;
         .poster{
             .more{
-                margin: 0;
-                width: 100%;
                 height: 100%;
                 display: flex;
                 font-size: 18px;
@@ -107,7 +65,6 @@
                 height: 100%;
             }
             .infoP{
-                
                 box-sizing: border-box;
                 padding: 15px;
                 opacity: 0;
@@ -124,7 +81,6 @@
                 p{
                     padding: 5px;
                     text-align: begin;
-                    margin: 0;
                     .janr{
                         //border: 1px solid white;
                         color: rgb(105, 104, 104);
@@ -177,8 +133,7 @@
             @media (max-width: 375px) {
                 flex: 0 0 160px;
             }
-        }
-        
+        }   
     }
     @media (max-width: 375px) {
         padding-left: 0px;

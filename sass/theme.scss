@@ -2,14 +2,24 @@
 @import "_mixin.scss";
 @import "_navM.scss";
 @import "_footer.scss";
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-family: 'Molot';
+}
 
+p{
+    font-family: 'molot';
+    font-size: 20px;
+    @media (max-width: 700px) {
+        font-size: 15px;
+    }
+}
 body{
     position: relative;
     background-color: $bgcolor;
-    padding: 0;
-    margin: 0;
     background-image: url(../images/dotsup.svg);
-
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -30,8 +40,6 @@ body{
 
 
 #wrap{
-    margin: 0;
-    padding: 0;
     position: relative;
     display: block;
     box-sizing: border-box;
@@ -48,8 +56,6 @@ body{
     width: 100%;
     height: auto;
     bottom: -10px;
-    padding: 0;
-    margin: 0;
     transition: 0.2s;
     img{
         margin-bottom: -10px;
@@ -75,7 +81,6 @@ a{
     border-radius: 10px;
     margin: 12px;
     width: calc(100% - 34px);
-    padding: 0;
     margin-top: 10px;
 }
 

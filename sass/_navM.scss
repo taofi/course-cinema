@@ -3,8 +3,6 @@ nav{
     box-sizing: border-box;
     @include neon;
     height: 70px;
-    margin: 0;
-    padding: 0;
     border: none;
     border-bottom: 4px solid;
     border-color: $maincolor;
@@ -12,10 +10,17 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    a{
+        flex: 0 1 50px;
+       // margin-right: 10px;
+    }
     img{
         margin-top: 5px;
         margin-left: 5px;
         height: 80%;
+    }
+    .icon{
+        width: 100%;
     }
     p{
         margin: -2px;

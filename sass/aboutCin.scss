@@ -1,18 +1,15 @@
 @import "_vars.scss";
 @import "_mixin.scss";
 
-*{
-    margin: 0;
-    padding: 0;
-    font-weight: 100;
-}
-
 main{
     img{
         @include neon;
         border: 2px solid $maincolor;
         border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
     }
+
     padding: 60px;
     color: white;
     font-weight: 100;
@@ -27,37 +24,17 @@ main{
             margin: 20px;
             margin-top: 0px;
         }
-        
-        img{
-            width: 100%;
-        }
     }
-    .bar{
+    .bar, .cassa{
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 40% 60%;
-        img{
-            width: 100%;
-            margin-right: 15px;
-            box-sizing: border-box;
-        }
         p{
             text-indent: 15px;
         }
     }
     .cassa{
         margin: 10px;
-        box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        img{
-            width: 100%;
-            margin-left: 15px;
-            box-sizing: border-box;
-        }
-        p{
-            text-indent: 15px;
-        }
     }
     @media (min-width: 600px) and (max-width: 800px) {
         .cassa, .bar{

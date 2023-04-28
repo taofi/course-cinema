@@ -5,15 +5,9 @@
   height: 100vh;
   position: fixed;
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 #loading img {
   position: relative;
@@ -34,16 +28,14 @@
   bottom: 72px;
   width: 50px;
   position: absolute;
-  -webkit-animation: rotate 2.8s infinite linear;
-          animation: rotate 2.8s infinite linear;
+  animation: rotate 2.8s infinite linear;
 }
 #loading #circle2 {
   right: 30px;
   bottom: 72px;
   width: 60px;
   position: absolute;
-  -webkit-animation: rotate 3s infinite linear;
-          animation: rotate 3s infinite linear;
+  animation: rotate 3s infinite linear;
 }
 #loading p {
   position: relative;
@@ -54,25 +46,12 @@
   font-size: 30px;
 }
 
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @font-face {

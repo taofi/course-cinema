@@ -20,8 +20,7 @@ section h3 span, section p span {
 }
 section #mapCin {
   margin-top: 30px;
-  -webkit-box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
-          box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
   overflow: hidden;
   border: 5px solid #20cdb9;
 }
